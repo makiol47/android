@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+    <EditText
+            android:id="@+id/number1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Długość"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+    <EditText
+            android:id="@+id/number2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/number1"
+            android:hint="Przekrój"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+    <EditText
+            android:id="@+id/number3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/number2"
+            android:hint="Ile zył"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+    <Button
+            android:id="@+id/btn_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/number3"
+            android:text="Oblicz"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="18dp"/>
+    <TextView
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_count"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_marginTop="53dp"/>
+
+    <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Przelicz na złotowki, wpisz cene miedzi"
+            android:layout_below="@id/btn_count"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="176dp"/>
+    <Button
+            android:id="@+id/btn_count1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText4"
+            android:text="Przelicz"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+
+</RelativeLayout>

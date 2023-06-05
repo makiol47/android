@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                tools:context=".MainActivity">
+
+    <EditText
+            android:id="@+id/number1"
+            android:layout_width="384dp"
+            android:layout_height="110dp"
+            android:hint="Ilość miedzi w kablu"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="5dp"/>
+    <Button
+            android:text="przejdź"
+            android:layout_width="139dp"
+            android:layout_height="57dp"
+            android:id="@+id/button"
+            android:layout_below="@id/number1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+    <EditText
+            android:id="@+id/number2"
+            android:layout_width="381dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/number1"
+            android:hint="Dobierz przekrój"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="144dp"/>
+    <Button
+            android:text="przejdź"
+            android:layout_width="139dp"
+            android:layout_height="57dp"
+            android:id="@+id/button2"
+            android:layout_below="@id/number2"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+    <EditText
+            android:id="@+id/number3"
+            android:layout_width="380dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/number2"
+            android:hint="Cena za zużyty prąd"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="137dp"/>
+    <Button
+            android:text="przejdź"
+            android:layout_width="139dp"
+            android:layout_height="56dp"
+            android:id="@+id/button3"
+            android:layout_below="@id/number3"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+</RelativeLayout>
